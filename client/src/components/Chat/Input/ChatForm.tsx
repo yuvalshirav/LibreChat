@@ -117,11 +117,6 @@ const ChatForm = ({ index = 0 }) => {
                 ref={(e) => {
                   ref(e);
                   textAreaRef.current = e;
-                  if (e) {
-                    setTimeout(() => {
-                      e.focus();
-                    }, 100); // Delay in milliseconds
-                  }
                 }}
                 disabled={disableInputs}
                 onPaste={handlePaste}
